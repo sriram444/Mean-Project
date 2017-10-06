@@ -1,0 +1,24 @@
+<form>
+    Username:<br>
+    <input type="text" ng-model="patient.ptusername" placeholder="Your user name.."><br><br>
+    Password :<br>
+    <input type="password" ng-model="patient.ptuserpwd" placeholder="Your password.."><br><br>
+    Full name : <br>
+    <input type="text" ng-model="patient.ptfullname" placeholder="Your full name.." ><br><br>
+    Specialist required :<br>
+    <select ng-model="patient.ptspecialist">
+        <option value="Allergist">Allergist</option>
+        <option value="Anaesthesiologist">Anaesthesiologist </option>
+        <option value="Andrologist">Andrologist</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Epidemiologist">Epidemiologist</option>
+    </select><br><br>
+    Age :<br>
+    <input type="number" ng-model="patient.ptrage" placeholder="Your age.."><br><br>
+    Gender : <br>
+    <input type="radio" ng-model="patient.ptgender" value="male"> : male
+    <input type="radio" ng-model="patient.ptgender" value="female"> : Female<br><br>
+
+    <input type="button" ng-click="ptregistration()" ng-disabled="!patient.ptusername || !patient.ptuserpwd || !patient.ptfullname" value="Click here">
+</form>

@@ -1,0 +1,47 @@
+<h1>This is admin home</h1>
+<hr>
+<h2>Patient details</h2>
+<button type="submit" ng-click="patientdetails()">patient details</button>
+<form>
+    <table>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+            <th>fullname</th>
+            <th>age</th>
+            <th>gender</th>
+        </tr>
+        <tr ng-repeat="use in user">
+            <td>{{use.ptusername}}</td>
+            <td>{{use.ptuserpwd}}</td>
+            <td>{{use.ptfullname}}</td>
+            <td>{{use.ptrage}}</td>
+            <td>{{use.ptgender}}</td>
+        </tr>
+    </table>
+</form>
+<!--{{user}}-->
+<hr>
+<h2>Doctor details</h2>
+<button type="submit" ng-click="doctordetails()">doctor details</button>
+<!--{{user1}}-->
+<form>
+    <table>
+        <tr>
+            <th>username</th>
+            <th>password</th>
+            <th>fullname</th>
+            <th>Specialist</th>
+            <th>age</th>
+            <th>gender</th>
+        </tr>
+        <tr ng-repeat="use1 in user1">
+            <td>{{use1.dusername}}</td>
+            <td>{{use1.duserpwd}}</td>
+            <td>{{use1.dfullname}}</td>
+            <td>{{use1.drspecialization}}</td>
+            <td>{{use1.drage}}</td>
+            <td>{{use1.drgender}}</td>
+        </tr>
+    </table>
+</form>

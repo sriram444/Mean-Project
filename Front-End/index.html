@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to V-hospital</title>
+</head>
+<link href="css/testview.css" rel="stylesheet">
+<body ng-app="app">
+<h1 style="text-align:center">Second Campus International Hospitals</h1>
+<ul>
+    <li><strong><a href="#!adminlogin">Admin Login</a></strong></li>
+    <li><strong><a href="#!doctorlogin">Doctor Login</a></strong></li>
+    <li><strong><a href="#!doctorregistration">Doctor Registration</a></strong></li>
+    <li><strong><a href="#!patientlogin">Patient Login</a></strong></li>
+    <li><strong><a href="#!patientregistration">patient Registration</a></strong></li>
+</ul>
+<hr>
+<h1>Welcome to Second Campus Learning Solutions Hospital</h1>
+<div ng-view></div>
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+
+<script src="modules/module.js"></script>
+<script src="configuration.js"></script>
+<script src="adminLogin.js"></script>
+<script src="drLogin.js"></script>
+<script src="drRegistration.js"></script>
+<script src="patientLogin.js"></script>
+<script src="patientRegistration.js"></script>
+<script src="adminHome.js"></script>
+<script src="doctorHome.js"></script>
+<script src="patientHome.js"></script>
+
+</body>
+<hr>
+<div id="d3">
+    <address>
+        <h2>Address</h2>
+        Second Campus Learning Solutions <br>
+        Beyond Data Technology Incubator <br>
+        CR RAO AIMSCS, Prof.  CR Rao Road  <br>
+        University of Hyderabad Campus <br>
+        Gachibowli <br>
+        Hyderabad <br>
+        INDIA <br>
+    </address>
+</div>
+
+</html>

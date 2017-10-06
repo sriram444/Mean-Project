@@ -1,0 +1,23 @@
+<h1>This is patient home page</h1>
+<form>
+    <table>
+        <tr>
+            <th>user name</th>
+            <th>Password</th>
+            <th>Specialist required</th>
+            <th>Full name</th>
+            <th>Age</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td>{{pat.ptusername}}</td>
+            <td>{{pat.ptuserpwd}}</td>
+            <td>{{pat.ptspecialist}}</td>
+            <td>{{pat.ptfullname}}</td>
+            <td>{{pat.ptrage}}</td>
+            <td>{{pat.ptgender}}</td>
+        </tr>
+    </table>
+</form>
+
+<button ng-click="drlist()">Doctors List</button>

@@ -1,0 +1,25 @@
+<form>
+    Username:<br>
+    <input type="text" ng-model="doctor.dusername"><br><br>
+    Password :<br>
+    <input type="password" ng-model="doctor.duserpwd"><br><br>
+    Full name : <br>
+    <input type="text" ng-model="doctor.dfullname"><br><br>
+    specialization :<br>
+    <!--<input type="text" ng-model="doctor.drspecialization"><br><br>-->
+    <select ng-model="doctor.drspecialization">
+        <option value="allergist">Allergist</option>
+        <option value="Anaesthesiologist">Anaesthesiologist </option>
+        <option value="Andrologist">Andrologist</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Epidemiologist">Epidemiologist</option>
+    </select><br><br>
+    Age :<br>
+    <input type="number" ng-model="doctor.drage"><br><br>
+    Gender : <br>
+    <input type="radio" ng-model="doctor.drgender" value="male"> : male
+    <input type="radio" ng-model="doctor.drgender" value="female"> : Female<br><br>
+
+    <button type="submit" ng-click="drregistration()" ng-disabled="!doctor.dusername || !doctor.duserpwd || !doctor.dfullname || !doctor.drspecialization">Click here</button>
+</form>
